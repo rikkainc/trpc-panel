@@ -1,5 +1,5 @@
 {
-  "name": "@extends/trpc-panel",
+  "name": "@extendslcc/trpc-panel",
   "version": "1.0.3",
   "description": "UI for testing tRPC backends",
   "main": "lib/index.js",
@@ -28,7 +28,7 @@
     "lib": "lib"
   },
   "peerDependencies": {
-    "@trpc/server": "^10.0.0",
+    "@trpc/server": "^11.0.0-next-beta.264",
     "zod": "^3.19.1"
   },
   "devDependencies": {
@@ -50,9 +50,9 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
-    "@trpc/client": "^11.0.0-alpha-next-2023-11-24-13-58-38.113",
-    "@trpc/react-query": "^11.0.0-alpha-next-2023-11-24-13-58-38.113",
-    "@trpc/server": "^11.0.0-alpha-next-2023-11-24-13-58-38.113",
+    "@trpc/client": "^11.0.0-next-beta.264",
+    "@trpc/react-query": "^11.0.0-next-beta.264",
+    "@trpc/server": "^11.0.0-next-beta.264",
     "@types/jest": "^29.2.4",
     "@types/json-bigint": "^1.0.1",
     "@types/react": "^18.0.21",

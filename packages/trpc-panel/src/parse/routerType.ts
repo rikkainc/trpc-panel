@@ -77,7 +77,7 @@ const RouterSchema = z.object({
 });
 
 export function isRouter(obj: unknown): obj is Router {
-  return RouterSchema.safeParse(obj).success;
+  return RouterSchema.safeParse(obj).success || !isProcedure(obj);
 }
 
 const ProcedureSchema = z.object({
