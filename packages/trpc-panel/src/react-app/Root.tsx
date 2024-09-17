@@ -3,7 +3,7 @@ import { RouterContainer } from "./components/RouterContainer";
 import type { ParsedRouter } from "../parse/parseRouter";
 import { RenderOptions } from "@src/render";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { createTRPCReact, httpBatchLink } from "@trpc/react-query";
+import { createTRPCReact, httpLink } from "@trpc/react-query";
 import {
   HeadersContextProvider,
   useHeaders,
@@ -60,7 +60,7 @@ function ClientProviders({
   const [trpcClient] = useState(() =>
     trpc.createClient({
       links: [
-        httpBatchLink({
+        httpLink({
           url: options.url,
           headers: headers.getHeaders,
         }),

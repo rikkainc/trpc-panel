@@ -1,6 +1,6 @@
 {
-  "name": "@extendslcc/trpc-panel",
-  "version": "1.0.3",
+  "name": "@rikkainc/trpc-panel",
+  "version": "1.0.0",
   "description": "UI for testing tRPC backends",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -8,7 +8,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "build": "npx rollup --bundleConfigAsCjs --config rollup.config.js",
+    "build": "bunx rollup --bundleConfigAsCjs --config rollup.config.js",
     "dev": "rollup --config rollup.config.js --watch --bundleConfigAsCjs"
   },
   "author": "",
